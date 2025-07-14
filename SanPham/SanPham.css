@@ -1,0 +1,129 @@
+/* ==== KHU VỰC SẢN PHẨM ==== */
+#products {
+    padding: 30px;
+    background-color: #f7f9fc;
+}
+
+/* Tiêu đề danh mục */
+.category-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1a1a;
+    border-left: 6px solid #2196F3;
+    padding-left: 12px;
+    margin: 40px 0 15px;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Thẻ sản phẩm */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 260px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease, box-shadow 0.3s ease;
+}
+
+.product-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Link sản phẩm */
+.product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hình ảnh */
+.product-image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Thông tin sản phẩm */
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin: 8px 0;
+    color: #1a1a1a;
+}
+
+.product-info .desc {
+    font-size: 14px;
+    color: #555;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.product-info .price {
+    font-size: 15px;
+    color: #e53935;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.product-info .warranty {
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* ==== DROPDOWN USER ==== */
+.user-dropdown {
+    position: relative;
+}
+
+.user-dropdown .dropdown-menu {
+    display: none; /* ẨN BAN ĐẦU */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #004a80;
+    border: 1px solid #007acc;
+    min-width: 180px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.user-dropdown .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #005fa3;
+    font-size: 14px;
+}
+
+

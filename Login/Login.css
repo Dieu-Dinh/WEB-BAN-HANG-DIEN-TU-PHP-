@@ -1,0 +1,374 @@
+/* Container chính */
+#fox {
+    margin: auto; /* Căn giữa container theo chiều ngang */
+    background-color: white; /* Nền trắng cho toàn bộ container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Đổ bóng nhẹ quanh container */
+}
+
+/* Header */
+#fox-header {
+    text-align: center; /* Canh giữa nội dung header */
+    background-color: #007acc; /* Màu nền xanh sáng */
+}
+
+/* Navigation - Thanh điều hướng */
+#fox-nav {
+    background-color: #004a80; /* Màu nền xanh đậm */
+}
+
+#fox-nav ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng của danh sách */
+    display: flex; /* Hiển thị dạng flex để các mục nằm ngang */
+    justify-content: center; /* Canh giữa các mục trong thanh nav */
+    padding: 0; /* Bỏ khoảng padding mặc định */
+}
+
+#fox-nav ul li {
+    flex: 1; /* Mỗi mục nav chiếm đều không gian ngang */
+    text-align: center; /* Canh giữa chữ trong mỗi mục */
+}
+
+#fox-nav ul li a {
+    display: block; /* Hiển thị link dưới dạng block để dễ căn chỉnh */
+    padding: 12px 0; /* Khoảng cách trên dưới cho link */
+    color: white; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-weight: bold; /* Chữ in đậm */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền mượt */
+}
+
+#fox-nav ul li a:hover {
+    background-color: #005fa3; /* Màu nền khi hover */
+    border-radius: 5px; /* Bo góc khi hover */
+}
+
+/* Body chính */
+#fox-body {
+    text-align: center; /* Canh giữa nội dung */
+    padding: 50px 20px 30px; /* Khoảng cách trên, trái/phải, dưới */
+    background-color: #e6f2ff; /* Màu nền xanh nhạt */
+}
+
+#fox-body h1 {
+    font-size: 2.8rem; /* Kích thước chữ lớn cho tiêu đề */
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    color: #004a80; /* Màu chữ xanh đậm */
+}
+
+#fox-body p {
+    font-size: 1.2rem; /* Cỡ chữ cho đoạn văn */
+    margin-bottom: 25px; /* Khoảng cách dưới đoạn văn */
+}
+
+/* Các nút bấm chung .btn và .btn-detail */
+.btn, .btn-detail {
+    display: inline-block; /* Hiển thị cạnh nhau */
+    background-color: #007acc; /* Nền nút xanh */
+    color: white; /* Chữ trắng */
+    padding: 12px 30px; /* Khoảng cách trong nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    border-radius: 6px; /* Bo góc */
+    font-weight: bold; /* Chữ đậm */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu mượt */
+}
+
+.btn:hover, .btn-detail:hover {
+    background-color: #005fa3; /* Màu nền khi hover */
+}
+
+/* About - Phần giới thiệu */
+#about {
+    padding: 40px 20px; /* Khoảng cách bên trong */
+    max-width: 1100px; /* Giới hạn chiều rộng */
+    margin: 0 auto 40px; /* Canh giữa và khoảng cách dưới */
+    text-align: center; /* Canh giữa nội dung */
+}
+
+#about h2 {
+    font-size: 2rem; /* Cỡ chữ tiêu đề phụ */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+    color: #004a80; /* Màu chữ xanh đậm */
+}
+
+#about p {
+    max-width: 700px; /* Giới hạn chiều rộng đoạn văn */
+    margin: 0 auto; /* Canh giữa đoạn văn */
+    font-size: 1.1rem; /* Cỡ chữ */
+    color: #333; /* Màu chữ xám đậm */
+    line-height: 1.5; /* Chiều cao dòng */
+}
+
+/* Tin tức + Cột - Hai cột ngang */
+.two-columns {
+    display: flex; /* Hiển thị flex */
+    flex-wrap: nowrap; /* Không xuống hàng, 2 cột nằm ngang */
+    justify-content: center; /* Canh giữa 2 cột */
+    gap: 30px; /* Khoảng cách giữa 2 cột */
+    margin: 40px 0; /* Khoảng cách trên dưới */
+    padding: 0 20px; /* Khoảng cách trái phải */
+    max-width: 1100px; /* Giới hạn chiều rộng */
+    margin-left: auto;
+    margin-right: auto; /* Căn giữa */
+    margin-bottom: 60px; /* Khoảng cách dưới */
+}
+
+/* Tin tức và Đăng nhập chia đều */
+.login-section {
+    flex: 1; /* Chiếm 50% chiều rộng trong flex container */
+    background-color: #004a80; /* Nền xanh đậm */
+    color: white; /* Chữ trắng */
+    padding: 40px 30px; /* Khoảng cách trong */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 15px rgba(0, 74, 128, 0.4); /* Đổ bóng */
+    box-sizing: border-box; /* Bao gồm padding trong kích thước */
+    margin-bottom: 40px; /* Khoảng cách dưới */
+}
+
+/* Nút chi tiết trong login-section */
+.btn-detail {
+    background-color: #aad4ff; /* Màu nền sáng */
+    color: #004a80; /* Màu chữ xanh đậm */
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.btn-detail:hover {
+    background-color: #82b6e3; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
+/* Form đăng nhập căn chỉnh đẹp */
+.login-section form {
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.login-section label {
+    display: block; /* Hiển thị trên 1 dòng */
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"] {
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-section input[type="text"]::placeholder,
+.login-section input[type="password"]::placeholder {
+    color: #a3c2e5; /* Màu placeholder */
+}
+
+.login-section button.btn {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #aad4ff;
+    border: none;
+    border-radius: 8px;
+    color: #004a80;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-section button.btn:hover {
+    background-color: #82b6e3;
+    color: white;
+}
+
+/* Responsive - Chỉnh layout trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column; /* Cột xếp dọc */
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .news-section,
+    .login-section {
+        flex: unset;
+        width: 100%; /* Chiếm full chiều ngang */
+    }
+}
+
+/* Responsive cho mobile (bổ sung) */
+@media (max-width: 768px) {
+    .two-columns, .product-list, .news-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item, .product-card {
+        width: 90%; /* Thu nhỏ chiều rộng các mục */
+    }
+}
+
+/* Modal login - cửa sổ đăng nhập hiện lên */
+.modal {
+    display: none; /* Mặc định ẩn */
+    position: fixed; /* Cố định trên màn hình */
+    z-index: 1000; /* Hiển thị trên các thành phần khác */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Cuộn nếu nội dung dài */
+    background-color: rgba(0,0,0,0.6); /* Nền tối mờ */
+    backdrop-filter: blur(4px); /* Làm mờ nền phía sau */
+}
+
+.modal-content {
+    background-color: #dd1d1d; /* Nền đỏ */
+    margin: 8% auto; /* Căn giữa theo chiều ngang, cách trên 8% */
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 360px;
+    max-width: 90%; /* Tối đa 90% chiều rộng màn hình */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    position: relative;
+    text-align: center;
+    border: 2px solid #007acc; /* Viền xanh nổi bật */
+    transition: transform 0.3s ease;
+}
+
+.modal-content:hover {
+    transform: translateY(-5px); /* Nhấc lên nhẹ khi hover */
+}
+
+.modal-content h2 {
+    margin-bottom: 25px;
+    color: #004a80;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* Input trong modal */
+.modal-content input[type=text],
+.modal-content input[type=password] {
+    width: 100%;
+    padding: 14px 15px;
+    margin: 10px 0 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.modal-content input[type=text]:focus,
+.modal-content input[type=password]:focus {
+    border-color: #007acc; /* Viền xanh khi focus */
+    box-shadow: 0 0 8px rgba(0, 122, 204, 0.6);
+}
+
+/* Button trong modal */
+.modal-content .btn {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #007acc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content .btn:hover {
+    background-color: #005fa3;
+}
+
+/* Nút đóng modal */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* ===== Footer ===== */
+#fox-footer 
+{
+    margin: auto; /* Căn giữa */
+    background-color: #004a80; /* Màu nền xanh đậm */
+    color: white; /* Chữ trắng */
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+#fox-footer a {
+    color: #aad4ff; /* Màu link sáng */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#fox-footer a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+.user-dropdown {
+    position: relative;
+  }
+  
+  .user-dropdown a {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #004a80;
+    border: 1px solid #007acc;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    min-width: 180px;
+    z-index: 99;
+    border-radius: 0 0 6px 6px;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #005fa3;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #005fa3;
+  }
+  
+  .user-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

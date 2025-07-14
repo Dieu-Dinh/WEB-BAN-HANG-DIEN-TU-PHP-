@@ -1,0 +1,317 @@
+/* ===== Toàn trang ===== */
+#fox {
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Header & Navigation ===== */
+#fox-header {
+    text-align: center;
+    background: #007acc;
+}
+
+#fox-nav {
+    background: #004a80;
+}
+
+#fox-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#fox-nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+#fox-nav ul li a {
+    display: block;
+    padding: 12px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#fox-nav ul li a:hover {
+    background: #005fa3;
+    border-radius: 5px;
+}
+
+/* ===== Hero Section ===== */
+#fox-body {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: #e6f2ff;
+}
+
+#fox-body h1 {
+    font-size: 2.8rem;
+    color: #004a80;
+    margin-bottom: 15px;
+}
+
+#fox-body p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* ===== Button ===== */
+.btn, .btn-detail {
+    display: inline-block;
+    background: #007acc;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover, .btn-detail:hover {
+    background: #005fa3;
+}
+
+/* ===== Giới thiệu ===== */
+#about, #services {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+#about h2, #services h2, #products h2 {
+    font-size: 2rem;
+    color: #004a80;
+    margin-bottom: 20px;
+}
+
+#about p, #services ul {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+#services ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+/* ===== 2 Cột: Tin tức & Đăng nhập ===== */
+.two-columns {
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.news-section, .login-section {
+    flex: 1;
+    padding: 40px 30px;
+    background: #004a80;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h2, .login-section h2 {
+    font-size: 2rem;
+    color: #aad4ff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.news-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.news-item h3 {
+    font-size: 1.3rem;
+    color: #a3d3ff;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #d0e6ff;
+}
+
+.btn-detail {
+    background: #aad4ff;
+    color: #004a80;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
+
+.btn-detail:hover {
+    background: #82b6e3;
+    color: white;
+}
+
+/* ===== Form đăng nhập ===== */
+.login-section form {
+    color: white;
+}
+
+.login-section label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.login-section input::placeholder {
+    color: #a3c2e5;
+}
+
+.login-section button.btn {
+    width: 100%;
+    padding: 14px 0;
+    background: #aad4ff;
+    color: #004a80;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.login-section button.btn:hover {
+    background: #82b6e3;
+    color: white;
+}
+
+/* ===== Hot Deal ===== */
+.hot-deal {
+    background: #0099ff;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 30px 20px;
+}
+
+/* ===== Sản phẩm nổi bật ===== */
+#products {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product-card {
+    background: #f0f8ff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #004a80;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ===== Footer ===== */
+#fox-footer {
+    background: #004a80;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+#fox-footer a {
+    color: #aad4ff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#fox-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Dropdown người dùng ===== */
+.user-dropdown {
+    position: relative;
+}
+
+.user-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #004a80;
+    border: 1px solid #007acc;
+    min-width: 180px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.user-dropdown .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #005fa3;
+}

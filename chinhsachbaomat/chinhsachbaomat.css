@@ -1,0 +1,127 @@
+
+/* ===== Container ===== */
+#fox {
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* đổ bóng nhẹ */
+}
+/* ===== Header ===== */
+#fox-header {
+    text-align: center;
+    background-color: #007acc;
+    padding: 20px 0;
+}
+
+#fox-header img {
+    max-height: 80px;
+}
+
+/* ===== Navigtion ===== */
+#fox-nav {
+    background-color: #004a80;
+}
+
+#fox-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#fox-nav ul li {
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+}
+
+#fox-nav ul li a {
+    display: block;
+    padding: 12px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#fox-nav ul li a:hover {
+    background-color: #005fa3;
+    border-radius: 5px;
+}
+/* ===== Nội dung Chính sách bảo mật ===== */
+#fox-body {
+    padding: 40px 32px 32px 32px;
+    background: linear-gradient(135deg, #e6f2ff 0%, #f8fbff 100%);
+    margin:  auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#fox-body h1 {
+    color: #007acc;
+    margin-bottom: 24px;
+    font-size: 2.2em;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#fox-body h2 {
+    color: #004a80;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+    position: relative;
+    padding-left: 10px;
+}
+
+#fox-body h2::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 22px;
+    background: #007acc;
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#fox-body p, #fox-body ul {
+    color: #444;
+    font-size: 1.07em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+#fox-body ul {
+    padding-left: 28px;
+    margin-bottom: 18px;
+}
+
+#fox-body b {
+    color: #007acc;
+}
+
+/* ===== Footer ===== */
+#fox-footer {
+    background-color: #004a80;
+    color: white;
+    text-align: center;
+    padding: 28px 10px;
+    font-size: 0.98em;
+}
+
+#fox-footer p {
+    margin-bottom: 10px;
+}
+
+#fox-footer a {
+    color: #aad4ff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+#fox-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,149 @@
+/* ===== Container chính ===== */
+#fox {
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* đổ bóng nhẹ */
+}
+
+/* ===== Header ===== */
+#fox-header {
+  text-align: center;
+  background: #007acc;
+  padding: 18px 0 10px 0;
+}
+#fox-header img {
+  height: auto;
+}
+
+/* ===== Navigation ===== */
+#fox-nav {
+  background: #004a80;
+  border-bottom: 2px solid #007acc;
+}
+#fox-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+#fox-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+#fox-nav ul li a {
+  display: block;
+  padding: 14px 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08em;
+  transition: background 0.3s, color 0.3s;
+}
+#fox-nav ul li a:hover, #fox-nav ul li a.active {
+  background: #005fa3;
+  color: #aad4ff;
+  border-radius: 6px;
+}
+
+/* ===== Contact Section ===== */
+.contact-container {
+  max-width: 1000px;
+  background: #fff;
+  margin: 48px auto 40px auto;
+  padding: 32px 24px 28px 24px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+  border-radius: 14px;
+  border: 1px solid #e0e0e0;
+}
+.contact-container h1 {
+  text-align: center;
+  color: #007acc;
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+.contact-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 18px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #004a80;
+  letter-spacing: 0.5px;
+}
+input, textarea {
+  padding: 10px 12px;
+  margin-top: 4px;
+  border: 1px solid #b3c6d1;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #fafdff;
+  transition: border 0.2s;
+}
+input:focus, textarea:focus {
+  border: 1.5px solid #007acc;
+  outline: none;
+}
+button {
+  margin-top: 18px;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #007acc 60%, #005fa3 100%);
+  color: white;
+  border: none;
+  font-size: 1.08em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #005fa3 60%, #007acc 100%);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.success-message {
+  margin-top: 12px;
+  color: #1ca94c;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.08em;
+}
+
+/* ===== Google Map ===== */
+.contact-container iframe {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  min-height: 220px;
+  border: 0;
+}
+
+/* ===== Footer ===== */
+#fox-footer {
+  background: #004a80;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-bottom: 0;
+  font-size: 0.98rem;
+  border-radius: 0 0 12px 12px;
+}
+#fox-footer a {
+  color: #aad4ff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.2s;
+}
+#fox-footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
